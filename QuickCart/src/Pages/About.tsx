@@ -1,9 +1,10 @@
 import React from "react"
+import Aboutus from "../Components/Aboutus"
 
 const About:React.FC=()=>{
     return(
         <div>
-             About Page
+            <Aboutus/>
         </div>
     )
 }
