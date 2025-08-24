@@ -1,7 +1,7 @@
 import { assets } from "../assets/assets";
 const Banner = () => {
     return (
-        <div className="mt-10 bg-[#E6E9F2] w-full rounded-md p-">
+        <div className="mt-10 bg-[#E6E9F2] w-full rounded-md p-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-y-20">
                 <div>
                     <img src={assets.jbl_soundbox_image} alt="JBL" className="max-h-72" />

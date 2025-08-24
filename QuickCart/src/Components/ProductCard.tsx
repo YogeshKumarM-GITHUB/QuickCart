@@ -2,6 +2,7 @@
 import { products } from "../assets/productData"
 import { type Product } from "../types/Products/Products"
 import { assets } from "../assets/assets"
+import { useNavigate } from "react-router-dom"
 
 
 interface ProductProps {
@@ -9,12 +10,14 @@ interface ProductProps {
 }
 
 const ProductCard = ({ product }: ProductProps) => {
+    const navigate = useNavigate();
+
     return (
-        <div className="relative  md:max-w-[200px]">
-            <div className="bg-gray-500/10  rounded-lg  cursor-pointer">
+        <div className="relative  md:max-w-[200px] p-4">
+            <div onClick={() => navigate(`/product/${product.id}`)} className="bg-gray-500/10  rounded-lg  cursor-pointer">
                 <img src={product.imgSrc} alt={product.name} className="transition-transform duration-500 ease-in-out hover:scale-110" />
-                <div className="absolute cursor-pointer top-1 right-1 bg-white w-8 h-8 rounded-full flex items-center justify-center">
-                    <img src={assets.heart_icon} alt="favourite" className="h-4"/>
+                <div className="absolute cursor-pointer top-5 right-5 bg-white w-7 h-7 rounded-full flex items-center justify-center">
+                    <img src={assets.heart_icon} alt="favourite" className="h-4" />
                 </div>
             </div>
             <div className="flex flex-col items-start gap-1">

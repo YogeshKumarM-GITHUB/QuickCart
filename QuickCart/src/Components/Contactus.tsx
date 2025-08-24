@@ -7,7 +7,11 @@ const Contactus=()=>{
                        <div className="grid grid-cols-2 gap-4">
                             <div className="flex flex-col items-start">
                                <label>First Name</label>
-                               <input type="text" name="firstName" placeholder="First Name" className="rounded-md outline-none px-4 py-1 border border-gray-400" required/>
+                               <input 
+                                type="text" 
+                                name="firstName" 
+                                placeholder="First Name" 
+                                className="rounded-md outline-none px-4 py-1 border border-gray-400" required/>
                             </div>
                             <div className="flex flex-col items-start">
                                <label>Last Name</label>
@@ -25,7 +29,7 @@ const Contactus=()=>{
                        <div className="w-full flex flex-col items-start">
                              <label>Reason for Contact</label>
                              <textarea name="reasonforContact" placeholder="Choose your reason contacting us" className="rounded-md outline-none px-4 py-4 border border-gray-300 w-full"/>
-                       </div>
+                       </div>  
                         <button className="bg-green-600 w-full py-2 text-white font-bold rounded-md cursor-pointer">Submit</button>
                   </form>
             </div>

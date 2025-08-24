@@ -7,6 +7,7 @@ import Footer from './Components/Footer'
 import Shop from './Pages/Shop'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import DetailProductPage from './Components/DetailProductPage'
 function App() {
   return (
     <div  className='container mx-auto max-w-screen-xl'>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/shop" element={<Shop/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
+            <Route path='/product/:id' element={<DetailProductPage/>}/>
        </Routes>
        <Footer/>
     </div>

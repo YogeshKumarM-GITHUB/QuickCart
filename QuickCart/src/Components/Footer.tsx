@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className="mt-4">
                     <h1 className="font-bold">Get in touch</h1>
                     <p className="text-sm text-gray-700">+1-234-567-890</p>
-                    <p className="text-sm text-gray-700">contact@greatstack.dev</p>
+                    <p className="text-sm text-gray-700">yogeshkumarm105@gmail.com</p>
                 </div>
             </div>
             <hr className="bg-gray-800 w-full h-0.8 mt-4"></hr>

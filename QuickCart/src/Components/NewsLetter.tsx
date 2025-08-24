@@ -1,6 +1,6 @@
 const NewsLetter = () => {
     return (
-        <div className="mt-10">
+        <div className="mt-10 p-4">
             <div className="flex flex-col items-center justify-center gap-2">
                 <div>
                     <p className="md:text-4xl text-2xl font-medium">Subscribe now & get 20% off</p>

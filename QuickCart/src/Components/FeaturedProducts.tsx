@@ -26,7 +26,7 @@ const details: featuredProd[] = [
 
 const FeaturedProducts = () => {
     return (
-        <div>
+        <div className="p-4">
             <div className="mt-6 flex flex-col items-center">
                 <h1 className="text-3xl font-medium">Featured Products</h1>
                 <div className="w-28 h-0.5 bg-orange-600 mt-2"></div>
@@ -46,7 +46,7 @@ const FeaturedProducts = () => {
                 })
 
                 }
-            </div>
+            </div> 
         </div>
     )
 }

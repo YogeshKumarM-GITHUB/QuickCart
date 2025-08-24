@@ -9,6 +9,6 @@ export interface Product{
     imgSrc: string;
 }
 
-export const ProductData:Product[]=products as Product[];
+export const ProductData:Product[]|Product=products as Product[];
 
 
