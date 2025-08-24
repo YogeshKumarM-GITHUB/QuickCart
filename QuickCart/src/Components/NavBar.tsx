@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import { NavLink } from 'react-router-dom'
 import { navLinksData, type NavBarLinks } from '../types/navbar/navLinks'
 import { useNavigate } from 'react-router-dom'
-import { SignInButton, useAuth, UserButton, UserProfile } from '@clerk/clerk-react'
+import { SignInButton, useAuth, UserButton } from '@clerk/clerk-react'
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
