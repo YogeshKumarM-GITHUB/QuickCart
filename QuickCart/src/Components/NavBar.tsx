@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             )
           })
         }
-        <button onClick={()=>navigate('/seller')} className='border border-gray-300 px-2 py-1 rounded-full'>Seller Dashboard</button>
+        <button onClick={()=>navigate('/seller/addproduct')} className='border border-gray-300 px-2 py-1 rounded-full'>Seller Dashboard</button>
       </div>
       <div className='flex flex-row items-center gap-2'>
         <img src={assets.search_icon} alt="search" />

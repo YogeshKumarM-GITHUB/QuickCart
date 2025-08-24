@@ -8,6 +8,8 @@ import DetailProductPage from './Components/DetailProductPage'
 import MainLayout from './Components/MainLayout'
 import AdminLayout from './Components/Admin/AdminLayout'
 import AddProduct from './Components/Admin/AddProduct'
+import ProductList from './Components/Admin/ProductList'
+import AdminOrders from './Components/Admin/AdminOrders'
 function App() {
   return (
     <div>
@@ -21,7 +23,9 @@ function App() {
           />
         </Route>
         <Route path="/seller" element={<AdminLayout />}>
-            <Route path="" element={<AddProduct/>} />
+            <Route path="addproduct" element={<AddProduct/>} />
+            <Route path="productlist" element={<ProductList/>}/>
+            <Route path="adminorders" element={<AdminOrders/>}/>
         </Route>
       </Routes>
     </div>
