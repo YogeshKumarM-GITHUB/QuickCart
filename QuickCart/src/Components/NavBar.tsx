@@ -2,9 +2,11 @@ import React from 'react'
 import { assets } from '../assets/assets'
 import { NavLink } from 'react-router-dom'
 import { navLinksData,type NavBarLinks } from '../types/navbar/navLinks'
+import { useNavigate } from 'react-router-dom'
 
 
 const Navbar: React.FC = () => {
+  const navigate=useNavigate();
   return (
     <nav className='flex flex-row items-center justify-between gap-2 mt-1 px-5'>
       <div>
@@ -23,7 +25,7 @@ const Navbar: React.FC = () => {
             )
           })
         }
-        <button className='border border-gray-300 px-2 py-1 rounded-full'>Seller Dashboard</button>
+        <button onClick={()=>navigate('/seller')} className='border border-gray-300 px-2 py-1 rounded-full'>Seller Dashboard</button>
       </div>
       <div className='flex flex-row items-center gap-2'>
         <img src={assets.search_icon} alt="search" />
